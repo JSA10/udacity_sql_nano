@@ -1,0 +1,18 @@
+---
+title: "SQL_ERD_reference"
+author: "Jerome Ahye"
+date: "02/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](parch-and-posey-erd.png)
+
+```{r pp_erd}
+
+```
+
+
