@@ -391,9 +391,19 @@ ORDER BY 2 DESC
 LIMIT 1;
 
 
--- CASE 
+-- CASE (WHEN) 
 
+/* Write a query to display for each order, the account ID, total amount of 
+the order, and the level of the order - ‘Large’ or ’Small’ - depending on if 
+the order is $3000 or more, or smaller than $3000. */
 
+SELECT a.id AS account_id, 
+       o.total_amt_usd AS total_spend, 
+       CASE WHEN o.total_amt_usd > 3000 THEN 'Large'
+            ELSE 'Small' END AS order_level
+  FROM orders o
+  JOIN accounts a
+  ON o.account_id = a.id;
 
 
 
